@@ -9,8 +9,8 @@ def get_ping(message):
     bot.reply_to(message, f"Bot listening => {message.date}")
 
 
-@bot.message_handler(commands=["hello"])
-def get_hello(message):
+@bot.message_handler(commands=["message"])
+def get_mesage(message):
     bot.send_message(message.chat.id, f"Bot listening => {message.date}")
 
 
